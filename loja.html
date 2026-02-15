@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loja | BlocoLendário</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Inter:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="logo" href="index.html">⛏ BlocoLendário</a>
+        <button class="menu-toggle" aria-label="Abrir menu">☰</button>
+        <nav class="main-nav">
+          <a href="index.html">Início</a>
+          <a class="active" href="loja.html">Loja</a>
+          <a href="noticias.html">Notícias</a>
+          <a href="contato.html">Contato</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="section">
+      <div class="container">
+        <h1 class="section-title">Loja Oficial</h1>
+        <p class="section-subtitle">
+          Escolha seu pacote e finalize o pagamento com segurança pela InfinitePay.
+        </p>
+
+        <div class="product-grid">
+          <article class="product-card pixel-border">
+            <span class="badge">VIP</span>
+            <h2>VIP Ferro</h2>
+            <p>30 dias de perks, kit inicial e tag exclusiva no chat.</p>
+            <strong>R$ 19,90</strong>
+            <a class="btn btn-primary" href="https://checkout.infinitepay.io/blocolendario-vip-ferro" target="_blank" rel="noopener">Comprar</a>
+          </article>
+
+          <article class="product-card pixel-border featured">
+            <span class="badge">MAIS VENDIDO</span>
+            <h2>VIP Diamante</h2>
+            <p>60 dias, /fly no spawn, baú extra e prioridade na fila.</p>
+            <strong>R$ 49,90</strong>
+            <a class="btn btn-primary" href="https://checkout.infinitepay.io/blocolendario-vip-diamante" target="_blank" rel="noopener">Comprar</a>
+          </article>
+
+          <article class="product-card pixel-border">
+            <span class="badge">MOEDAS</span>
+            <h2>10.000 Coins</h2>
+            <p>Use para comprar itens raros, keys e melhorias na loja in-game.</p>
+            <strong>R$ 14,90</strong>
+            <a class="btn btn-primary" href="https://checkout.infinitepay.io/blocolendario-coins-10k" target="_blank" rel="noopener">Comprar</a>
+          </article>
+
+          <article class="product-card pixel-border">
+            <span class="badge">ITENS</span>
+            <h2>Kit Guerreiro</h2>
+            <p>Espada encantada, armadura épica e poções para PvP.</p>
+            <strong>R$ 24,90</strong>
+            <a class="btn btn-primary" href="https://checkout.infinitepay.io/blocolendario-kit-guerreiro" target="_blank" rel="noopener">Comprar</a>
+          </article>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <p>Pagamentos processados por InfinitePay.</p>
+        <p>Após o pagamento, a entrega é automática em até 5 minutos.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
