@@ -1,0 +1,30 @@
+<svg width="920" height="360" viewBox="0 0 920 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="textGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFD46B" />
+      <stop offset="55%" stop-color="#FF7A2F" />
+      <stop offset="100%" stop-color="#4E1D7A" />
+    </linearGradient>
+    <linearGradient id="rockGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1A1033" />
+      <stop offset="100%" stop-color="#09060F" />
+    </linearGradient>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <circle cx="260" cy="95" r="72" fill="#171122"/>
+  <circle cx="320" cy="95" r="72" fill="#120C1E"/>
+  <circle cx="240" cy="80" r="82" stroke="#FFB054" stroke-width="18" stroke-dasharray="9 6"/>
+
+  <text x="460" y="145" text-anchor="middle" font-family="Orbitron, sans-serif" font-size="108" font-weight="800" fill="url(#textGrad)" stroke="#180C2D" stroke-width="8" filter="url(#glow)">REDE</text>
+  <text x="460" y="255" text-anchor="middle" font-family="Orbitron, sans-serif" font-size="108" font-weight="800" fill="url(#textGrad)" stroke="#180C2D" stroke-width="8" filter="url(#glow)">ECLIPSE</text>
+
+  <path d="M65 305C200 250 720 250 855 305L765 348H155L65 305Z" fill="url(#rockGrad)" stroke="#2E1A4B" stroke-width="6"/>
+  <path d="M120 306C175 288 260 290 318 306M372 306C420 286 500 286 548 306M602 306C670 284 740 286 800 306" stroke="#FF7F33" stroke-width="8" stroke-linecap="round"/>
+</svg>
