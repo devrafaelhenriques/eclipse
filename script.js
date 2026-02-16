@@ -1,12 +1,31 @@
-const toggleButton = document.querySelector('.menu-toggle');
-const nav = document.querySelector('.main-nav');
+const menuToggle = document.querySelector('.menu-toggle');
+const navLinks = document.querySelector('.nav-links');
+const copyButton = document.querySelector('#copy-ip');
+const ipElement = document.querySelector('#server-ip');
 
-if (toggleButton && nav) {
-  toggleButton.addEventListener('click', () => {
-    nav.classList.toggle('open');
+if (menuToggle && navLinks) {
+  menuToggle.addEventListener('click', () => navLinks.classList.toggle('open'));
+  navLinks.querySelectorAll('a').forEach((link) => {
+    link.addEventListener('click', () => navLinks.classList.remove('open'));
   });
+}
 
-  nav.querySelectorAll('a').forEach((link) => {
-    link.addEventListener('click', () => nav.classList.remove('open'));
+if (copyButton && ipElement) {
+  copyButton.addEventListener('click', async () => {
+    const ip = ipElement.textContent?.trim();
+    if (!ip) return;
+
+    try {
+      await navigator.clipboard.writeText(ip);
+      copyButton.textContent = 'IP copiado!';
+      setTimeout(() => {
+        copyButton.textContent = 'Copiar IP';
+      }, 1600);
+    } catch {
+      copyButton.textContent = 'Falha ao copiar';
+      setTimeout(() => {
+        copyButton.textContent = 'Copiar IP';
+      }, 1600);
+    }
   });
 }
