@@ -1,19 +1,18 @@
 const menuToggle = document.querySelector('.menu-toggle');
-const menu = document.querySelector('.menu');
+const navLinks = document.querySelector('.nav-links');
 const copyButton = document.querySelector('#copy-ip');
-const serverIpElement = document.querySelector('#server-ip');
+const ipElement = document.querySelector('#server-ip');
 
-if (menuToggle && menu) {
-  menuToggle.addEventListener('click', () => menu.classList.toggle('open'));
-  menu.querySelectorAll('a').forEach((link) => {
-    link.addEventListener('click', () => menu.classList.remove('open'));
+if (menuToggle && navLinks) {
+  menuToggle.addEventListener('click', () => navLinks.classList.toggle('open'));
+  navLinks.querySelectorAll('a').forEach((link) => {
+    link.addEventListener('click', () => navLinks.classList.remove('open'));
   });
 }
 
-if (copyButton && serverIpElement) {
+if (copyButton && ipElement) {
   copyButton.addEventListener('click', async () => {
-    const ip = serverIpElement.textContent?.trim();
-
+    const ip = ipElement.textContent?.trim();
     if (!ip) return;
 
     try {
@@ -21,12 +20,12 @@ if (copyButton && serverIpElement) {
       copyButton.textContent = 'IP copiado!';
       setTimeout(() => {
         copyButton.textContent = 'Copiar IP';
-      }, 1800);
+      }, 1600);
     } catch {
       copyButton.textContent = 'Falha ao copiar';
       setTimeout(() => {
         copyButton.textContent = 'Copiar IP';
-      }, 1800);
+      }, 1600);
     }
   });
 }

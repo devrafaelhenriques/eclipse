@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rede Eclipse | Loja VIP Minecraft</title>
+    <title>Rede Eclipse Store | VIP Minecraft</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -13,18 +13,16 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="bg-blur blur-1"></div>
-    <div class="bg-blur blur-2"></div>
+    <div class="bg-orb orb-a"></div>
+    <div class="bg-orb orb-b"></div>
 
-    <header class="topbar glass">
-      <div class="container nav">
-        <a href="#inicio" class="logo-mini">
-          <img src="logo-rede-eclipse.svg" alt="Logo Rede Eclipse" />
-        </a>
+    <header class="header glass">
+      <div class="container nav-wrap">
+        <a class="logo" href="#inicio">REDE ECLIPSE</a>
         <button class="menu-toggle" aria-label="Abrir menu">☰</button>
-        <nav class="menu">
+        <nav class="nav-links">
           <a href="#inicio">Início</a>
-          <a href="#loja">Loja VIP</a>
+          <a href="#loja">Loja</a>
           <a href="#anuncios">Anúncios</a>
           <a href="#servidor">Servidor</a>
         </nav>
@@ -32,119 +30,126 @@
     </header>
 
     <main>
-      <section id="inicio" class="hero container glass">
-        <div class="minecraft-overlay" aria-hidden="true"></div>
-        <div class="pixel-mountains" aria-hidden="true"></div>
-
+      <section class="hero container" id="inicio">
         <div class="hero-content">
-          <p class="eyebrow">Rede Eclipse • Loja Oficial</p>
+          <p class="tag">Servidor Minecraft • Loja Oficial</p>
           <h1>
-            Viva o <span>lado épico</span> do Minecraft
-            com vantagens exclusivas
+            Loja VIP <span>futurista</span> para levar sua experiência ao próximo nível
           </h1>
           <p>
-            Visual premium com alma Minecraft: blocos, bioma noturno e atmosfera de eclipse para
-            destacar o seu servidor desde o primeiro segundo.
+            Visual premium, perks exclusivos e checkout rápido via InfinitePay. Tudo com design
+            dark, neon glow e identidade moderna para sua comunidade.
           </p>
           <div class="hero-actions">
-            <a href="#loja" class="btn btn-primary">Ver VIPs</a>
-            <a href="#servidor" class="btn btn-secondary">Ver IP do Servidor</a>
-          </div>
-          <div class="hero-tags">
-            <span>⛏ Survival</span>
-            <span>⚔ PvP</span>
-            <span>🏰 Clãs</span>
+            <a class="btn btn-primary" href="#loja">Explorar VIPs</a>
+            <a class="btn btn-secondary" href="#servidor">Ver IP</a>
           </div>
         </div>
 
-        <div class="hero-render glass">
+        <aside class="hero-highlight glass">
           <img
-            src="logo-rede-eclipse.svg"
-            alt="Logo oficial da Rede Eclipse"
+            src="https://mc-heads.net/body/Notch/left"
+            alt="Skin renderizada em destaque"
             loading="eager"
           />
-          <div>
-            <h2>Marca oficial Rede Eclipse</h2>
-            <p>Identidade visual aplicada no topo para reforçar branding e impacto.</p>
-          </div>
-        </div>
+          <h2>VIP Eclipse</h2>
+          <p>Skin renderizada em destaque representando o plano premium.</p>
+        </aside>
       </section>
 
-      <section id="loja" class="container section">
+      <section class="section container" id="loja">
         <div class="section-head">
           <h2>Loja de VIPs</h2>
-          <p>Escolha seu pacote e evolua sua jornada no servidor.</p>
+          <p>Escolha o plano ideal e ative instantaneamente suas vantagens no servidor.</p>
         </div>
 
-        <div class="vip-grid">
+        <div class="cards-grid">
           <article class="vip-card glass">
-            <img src="https://mc-heads.net/body/Steve/left" alt="Render VIP Neon" loading="lazy" />
-            <span class="chip">VIP</span>
+            <img src="https://mc-heads.net/body/Steve/left" alt="VIP Neon" loading="lazy" />
+            <span class="badge">VIP</span>
             <h3>VIP Neon</h3>
-            <p>Tag exclusiva, kit inicial avançado e prioridade na fila por 30 dias.</p>
-            <strong class="price">R$ 29,90</strong>
-            <a class="btn btn-primary" href="https://checkout.infinitepay.io/redeeclipse-vip-neon" target="_blank" rel="noopener">Comprar</a>
+            <p>Tag exclusiva, kit avançado e prioridade de entrada por 30 dias.</p>
+            <strong>R$ 29,90</strong>
+            <a
+              class="btn btn-primary"
+              href="https://checkout.infinitepay.io/redeeclipse-vip-neon"
+              target="_blank"
+              rel="noopener"
+              >Comprar</a
+            >
           </article>
 
           <article class="vip-card glass featured">
-            <img src="https://mc-heads.net/body/Alex/left" alt="Render VIP Eclipse" loading="lazy" />
-            <span class="chip hot">Mais vendido</span>
-            <h3>VIP Eclipse</h3>
-            <p>/fly no spawn, bônus diário, perks avançadas e cosméticos por 60 dias.</p>
-            <strong class="price">R$ 59,90</strong>
-            <a class="btn btn-primary" href="https://checkout.infinitepay.io/redeeclipse-vip-eclipse" target="_blank" rel="noopener">Comprar</a>
+            <img src="https://mc-heads.net/body/Alex/left" alt="VIP Quantum" loading="lazy" />
+            <span class="badge hot">Mais vendido</span>
+            <h3>VIP Quantum</h3>
+            <p>/fly no spawn, bônus diários, cosméticos e vantagens avançadas por 60 dias.</p>
+            <strong>R$ 59,90</strong>
+            <a
+              class="btn btn-primary"
+              href="https://checkout.infinitepay.io/redeeclipse-vip-quantum"
+              target="_blank"
+              rel="noopener"
+              >Comprar</a
+            >
           </article>
 
           <article class="vip-card glass">
-            <img src="https://mc-heads.net/body/HeroBrine/left" alt="Render VIP Solar" loading="lazy" />
-            <span class="chip">VIP</span>
-            <h3>VIP Solar</h3>
-            <p>Acesso a comandos especiais, boosters e vantagens completas por 90 dias.</p>
-            <strong class="price">R$ 89,90</strong>
-            <a class="btn btn-primary" href="https://checkout.infinitepay.io/redeeclipse-vip-solar" target="_blank" rel="noopener">Comprar</a>
+            <img src="https://mc-heads.net/body/HeroBrine/left" alt="VIP Lendário" loading="lazy" />
+            <span class="badge">VIP</span>
+            <h3>VIP Lendário</h3>
+            <p>Comandos especiais, booster global e perks completas por 90 dias.</p>
+            <strong>R$ 89,90</strong>
+            <a
+              class="btn btn-primary"
+              href="https://checkout.infinitepay.io/redeeclipse-vip-lendario"
+              target="_blank"
+              rel="noopener"
+              >Comprar</a
+            >
           </article>
         </div>
       </section>
 
-      <section id="anuncios" class="container section">
+      <section class="section container" id="anuncios">
         <div class="section-head">
           <h2>Anúncios</h2>
-          <p>Fique por dentro dos eventos e novidades da Rede Eclipse.</p>
+          <p>Fique por dentro das novidades e eventos da Rede Eclipse.</p>
         </div>
 
         <div class="news-grid">
-          <article class="glass news-card">
+          <article class="news-card glass">
+            <span>20 Fev 2026</span>
+            <h3>Nova temporada Cyber Realms</h3>
+            <p>Mapa atualizado, novos desafios e ranking com premiações semanais.</p>
+          </article>
+          <article class="news-card glass">
             <span>15 Fev 2026</span>
-            <h3>Nova temporada Eclipse Lands</h3>
-            <p>Mapa inédito com missões progressivas e recompensas semanais para VIPs.</p>
+            <h3>Evento PvP Nexus</h3>
+            <p>Arena competitiva com recompensas exclusivas para os melhores clãs.</p>
           </article>
-          <article class="glass news-card">
+          <article class="news-card glass">
             <span>11 Fev 2026</span>
-            <h3>Evento PvP Magma Arena</h3>
-            <p>Compita com seu clã e dispute premiações exclusivas da loja.</p>
-          </article>
-          <article class="glass news-card">
-            <span>07 Fev 2026</span>
-            <h3>Bônus de compra ativo</h3>
-            <p>Até domingo, compras de VIP recebem vantagens extras temporárias.</p>
+            <h3>Bônus de loja ativo</h3>
+            <p>Compras de VIPs recebem bônus extras até domingo.</p>
           </article>
         </div>
       </section>
 
-      <section id="servidor" class="container section">
+      <section class="section container" id="servidor">
         <div class="server-box glass">
           <div>
             <h2>IP do Servidor</h2>
-            <p class="ip" id="server-ip">jogar.redeeclipse.com</p>
+            <p id="server-ip">jogar.redeeclipse.com</p>
           </div>
-          <button class="btn btn-primary" id="copy-ip" type="button">Copiar IP</button>
+          <button id="copy-ip" class="btn btn-primary" type="button">Copiar IP</button>
         </div>
       </section>
     </main>
 
     <footer class="footer">
       <div class="container">
-        <p>© 2026 Rede Eclipse • Loja oficial com pagamento InfinitePay.</p>
+        <p>© 2026 Rede Eclipse • Loja oficial com pagamentos via InfinitePay.</p>
       </div>
     </footer>
 
